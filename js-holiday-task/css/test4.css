@@ -1,0 +1,24 @@
+.margin{
+	margin-left: 250px;
+}
+.margin3{
+	margin-left: 242px;
+}
+.margin1{
+	margin-left: 250px;
+}
+.margin2{
+	margin-left: 300px;
+}
+.buttoncolor{
+	background-color: red;
+}
+.subcolor{
+	background-color: green;
+}
+#demo{
+	text-align: center;
+	font-size: 50px;
+	padding: 60px;
+	background-color:lightgrey;
+}

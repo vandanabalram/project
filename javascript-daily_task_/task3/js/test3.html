@@ -1,0 +1,26 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+</head>
+<body>
+
+  <script>
+var myVar = setInterval(myFunction, 1000);
+    
+    var word = 'welcome to javascript';
+var newArray = word.split('');
+
+function myFunction() {
+var letter = newArray.pop();
+var newWord = newArray.unshift(letter);
+var theWord = newArray.join('');
+document.getElementById('moveIt').innerHTML = theWord;
+}
+  </script>
+  <p id = 'moveIt'></p>
+  
+ 
+</body>
+</html>

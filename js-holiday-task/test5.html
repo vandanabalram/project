@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script>
+	var bills = [124, 48, 268];
+	var totals = [];
+	var pointlessArray = [];
+
+	function calculateTip(cost) {
+		switch (true) {
+			case cost < 50:
+				return cost * .2;
+				break;
+			case cost > 49 && cost < 201:
+				return cost * .15;
+				break;
+			case cost > 200:
+				return cost * .1;
+				break;
+			default:
+				// Error('Unsupported input.');
+		}
+	}
+
+	function makePointlessArray(inputArray) {
+		var length = inputArray.length;
+		for (var i = 0; i < length; i++) {
+			pointlessArray[i] = calculateTip(inputArray[i]);
+		}
+	}
+
+	function calculateTotal(billArray) {
+		var length = billArray.length;
+		for (var i = 0; i < length; i++) {
+			totals[i] = billArray[i] + calculateTip(billArray[i]);
+		}
+	}
+
+	makePointlessArray(bills);
+	calculateTotal(bills);
+
+	console.log(`The bills are: ${bills}`);
+	console.log(`The calculated tips are: ${pointlessArray}`);
+	console.log(`The calculated totals are: ${totals}`);
+	</script>
+	</body>
+	</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Retirement Calculator</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function calculateAge(year)
+			{
+				var x = 2019-year;
+			
+				if(x>=65)
+				{
+					var z = x - 65 ;
+					document.write("Age of the person is " +x+ "<br>" + "<br>")
+					return document.write("The person is Retired " + z +" years ago. "+ "<br>" + "<br>" + "<br>" );
+				}
+				else(x<65)
+				{
+					var z= 65-x;
+					document.write("Age of the person is " +x+ "<br>" + "<br>")
+					return document.write(z + " years is there for Retirement"+ "<br>" + "<br>" + "<br>" );
+				}
+			}			
+			var divyaAge=calculateAge(1994);
+			var divyaAge_1=calculateAge(1925);
+			var divyaAge_2=calculateAge(1965);
+
+
+		</script>
+	</body>
+</html>
+
+
+
+
+Type a message

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Data entry</title>
+		<script type="text/javascript">
+
+		function submit()
+		{
+			var firstname = document.getElementById('firstname').value;
+			var lastname = document.getElementById('lastname').value;
+			var email = document.getElementById('email').value;
+			var phone= document.getElementById('phone').value;
+
+			var table = document.getElementsByTagName('table')[0];
+
+			var a = table.insertRow(1);
+
+			var column1 = a.insertCell(0);
+			var column2 = a.insertCell(1);
+			var column3 = a.insertCell(2);
+			var column4 = a.insertCell(3);
+
+			column1.innerHTML = firstname ;
+			column2.innerHTML = lastname ;
+			column3.innerHTML = email ;
+			column4.innerHTML = phone ;
+		}
+	</script>
+	</head>
+	
+	<body>
+		First Name :<input type="text" name="firstname" id="firstname"><br><br>
+		Last Name  :<input type="text" name="lastname" id="lastname"><br><br>
+		Email      :<input type="text" name="Email" id="email"><br><br>
+		Phone No   :<input type="text" name="phone"  id="phone"><br><br>
+
+		<button onclick ="submit();">Submit</button><br><br>
+		<table border="1">
+			<tr>
+				<th>First name</th>
+				<th>Last Name</th>
+				<th>Email Id</th>
+				<th>Phone no</th>
+			</tr>
+			
+		</table>
+	</body>
+</html>
+
+
+
+
+

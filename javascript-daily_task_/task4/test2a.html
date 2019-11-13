@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+function bgChange(bg) {
+  document.body.style.background = bg;
+}
+</script>
+</head>
+<body>
+
+<table style="width:800px;height:300px">
+  <tr>
+    <td onclick="bgChange(this.style.backgroundColor)" 
+    onmouseout="bgChange('transparent')"
+    style="background-color:Khaki">khaki
+    </td>
+    </tr>
+    <tr>
+    <td onclick="bgChange(this.style.backgroundColor)" 
+    onmouseout="bgChange('transparent')"
+    style="background-color:PaleGreen">palegreen
+    </td>
+    </tr>
+    <tr>
+    <td onclick="bgChange(this.style.backgroundColor)" 
+    onmouseout="bgChange('transparent')"
+    style="background-color:Silver">silver
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

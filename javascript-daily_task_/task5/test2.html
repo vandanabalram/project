@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+var obj = { name:"kavya Gowda" };
+
+var greeting = function(a,b,c){
+    return this.name  +' ' + a + ' '+ " " +b + ' '  +c;
+};
+var bound = greeting.bind(obj); 
+console.log(bound("I",  "choose",  "you!"));
+console.log(bound(" loves  Icecream","and ", "Listening Music"));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <head>
+        <title>Show good morning good night wish as per time Javascript</title>
+    </head>
+    <script type="text/javascript">
+       var now = new Date();
+        alert( now.getHours() + 8 );
+        var now = new Date();
+        var hrs = now.getHours();
+        var msg = "";
+
+        if (hrs >  0) msg = "Mornin' Sunshine!"; // REALLY early
+        if (hrs >  6) msg = "Good morning";      // After 6am
+        if (hrs > 12) msg = "Good afternoon";    // After 12pm
+       
+        if (hrs > 17) msg = "Good evening";      // After 5pm
+        if (hrs > 22) msg = "Go to bed!";        // After 10pm
+        if (hrs = 17) msg = "Good night!";    
+
+        document.write(msg);
+    </script>
+</html>
+</body>
+</html>
